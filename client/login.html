@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+
+<div class="container">
+	<h2>Login</h2>
+
+	<div class="form-container">
+		<form action="../server/login.php" method="POST">
+			<label for="username">Username:</label>
+			<input type="text" name="username" id="username">
+			
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password">
+			
+			<button type="submit" onclick="hashPassword()">Submit to Login</button>
+		</form>
+	</div>
+
+
+<div class="link-container">
+    <a href="password_reset.html">Forgot Password?</a>
+    <a href="register.html">Register Here</a>
+</div>
+</div>
+
+<script src="js/sha256.js"></script>
+<script type="text/javascript">
+    function hashPassword() {
+        var input = document.getElementById('password').value;
+        
+        var hash = SHA256.hash(input);
+        
+        document.getElementById("password").value = hash;
+    }
+</script>
+</body>
+</html>

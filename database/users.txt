@@ -1,0 +1,16 @@
+admin user:
+ username:admin_user
+ password:Admin1234$
+ email: A3ITISEMAILSERVER@gmail.com
+ 
+ 
+ 
+ password for email: Password123$
+
+NOTE: there is only one pre-set admin user. new admin users cannot be created. this is an email created specifically for this assignment and will be de-activated once this course ends
+the email A3ITISEMAILSERVER@gmail.com is also used for the email server which sends password reset emails to users who have forgotten their passwords.
+
+default user:
+username:default_user1
+password:TestPa$$word1
+email: s3843910@student.rmit.edu.au
